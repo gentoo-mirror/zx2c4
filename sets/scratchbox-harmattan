@@ -1,0 +1,6 @@
+dev-embedded/scratchbox
+dev-embedded/scratchbox-devkit-debian-squeeze
+dev-embedded/scratchbox-devkit-hashutils-squeeze-sdk
+dev-embedded/scratchbox-toolchain-cs2009q3-eglibc2_10
+dev-embedded/scratchbox-devkit-qemu
+dev-embedded/scratchbox-devkit-perl
