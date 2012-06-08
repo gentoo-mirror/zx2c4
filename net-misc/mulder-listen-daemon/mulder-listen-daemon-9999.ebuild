@@ -2,15 +2,15 @@
 
 inherit git-2
 
-DESCRIPTION="A password honeypot for telnet."
+DESCRIPTION="The truth is out there."
 HOMEPAGE="http://www.zx2c4.com"
 SRC_URI=""
-EGIT_REPO_URI="http://git.zx2c4.com/telnet-password-honeypot"
+EGIT_REPO_URI="http://git.zx2c4.com/mulder-listen-daemon"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 src_install() {
-    dobin honeypot
-	newinitd honeypot.initd honeypot
+    dobin mulderd
+	newinitd mulderd.initd mulderd
 	keepdir /var/empty
 }
