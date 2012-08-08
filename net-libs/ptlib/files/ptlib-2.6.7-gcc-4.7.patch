@@ -1,0 +1,13 @@
+Index: ptlib-2.6.7/include/ptlib/array.h
+===================================================================
+--- ptlib-2.6.7.orig/include/ptlib/array.h
++++ ptlib-2.6.7/include/ptlib/array.h
+@@ -523,7 +523,7 @@ template <class T> class PScalarArray :
+       T t;
+       stream >> t;
+       if (!stream.fail())
+-        SetAt(index, t);
++        this->SetAt(index, t);
+     }
+ };
+ 
