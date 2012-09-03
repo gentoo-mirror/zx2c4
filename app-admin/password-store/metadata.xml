@@ -9,6 +9,7 @@
   <longdescription>
   Stores, retrieves, generates, and synchronizes passwords securely using gpg, pwgen, and git.
   </longdescription>
+  <use>
     <flag name='X'>
       Use <pkg>x11-misc/xclip</pkg> to copy passwords to the clipboard.
     </flag>
