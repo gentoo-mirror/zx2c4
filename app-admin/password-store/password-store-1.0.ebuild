@@ -1,4 +1,6 @@
-# Copyright 2012 Jason A. Donenfeld <Jason@zx2c4.com>
+# Copyright 2012 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
 
 EAPI=4
 
@@ -13,19 +15,15 @@ KEYWORDS="~x86 ~amd64"
 IUSE="X +git"
 
 RDEPEND="app-crypt/gnupg
-         app-admin/pwgen
-         app-text/tree
-         git? ( dev-vcs/git )
-         X? ( x11-misc/xclip )
+		 app-admin/pwgen
+		 app-text/tree
+		 git? ( dev-vcs/git )
+		 X? ( x11-misc/xclip )
 "
 
-src_compile() {
-    mv src/password-store.sh src/pass
-}
-
 src_install() {
-    dobin src/pass
-    doman man/pass.1
-    dodoc README
-    newbashcomp bash-completion/pass-bash-completion.sh ${PN}
+	newbin src/password-store.sh pass
+	doman man/pass.1
+	dodoc README
+	newbashcomp bash-completion/pass-bash-completion.sh ${PN}
 }
