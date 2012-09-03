@@ -6,7 +6,7 @@ inherit bash-completion-r1
 
 DESCRIPTION="Stores, retrieves, generates, and synchronizes passwords securely using gpg, pwgen, and git."
 HOMEPAGE="http://zx2c4.com/"
-SRC_URI="http://git.zx2c4.com/password-store/snapshot/password-store-1.0.tar.xz"
+SRC_URI="http://git.zx2c4.com/password-store/snapshot/${P}.tar.xz"
 SLOT="0"
 LICENSE="GPL-2"
 KEYWORDS="~x86 ~amd64"
