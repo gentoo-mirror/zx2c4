@@ -15,6 +15,7 @@ IUSE="X +git"
 
 RDEPEND="app-crypt/gnupg
 		 app-admin/pwgen
+		 app-text/tree
 		 git? ( dev-vcs/git )
 		 X? ( x11-misc/xclip )
 "
