@@ -14,19 +14,19 @@ KEYWORDS="~amd64 ~x86"
 IUSE="X +git"
 
 RDEPEND="app-crypt/gnupg
-		 app-admin/pwgen
-		 app-text/tree
-		 git? ( dev-vcs/git )
-		 X? ( x11-misc/xclip )
+         app-admin/pwgen
+         app-text/tree
+         git? ( dev-vcs/git )
+         X? ( x11-misc/xclip )
 "
 
 src_compile() {
-	mv src/password-store.sh src/pass
+    mv src/password-store.sh src/pass
 }
 
 src_install() {
     dobin src/pass
-	doman man/pass.1
-	dodoc README
-	newbashcomp bash-completion/pass-bash-completion.sh ${PN}
+    doman man/pass.1
+    dodoc README
+    newbashcomp bash-completion/pass-bash-completion.sh ${PN}
 }
