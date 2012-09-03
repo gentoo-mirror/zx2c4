@@ -14,11 +14,12 @@ LICENSE="GPL-2"
 KEYWORDS="~x86 ~amd64"
 IUSE="X +git"
 
-RDEPEND="app-crypt/gnupg
-         app-admin/pwgen
-         app-text/tree
-         git? ( dev-vcs/git )
-         X? ( x11-misc/xclip )
+RDEPEND="
+	app-crypt/gnupg
+	app-admin/pwgen
+	app-text/tree
+	git? ( dev-vcs/git )
+	X? ( x11-misc/xclip )
 "
 
 src_install() {
