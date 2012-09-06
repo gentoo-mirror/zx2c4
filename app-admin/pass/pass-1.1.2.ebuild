@@ -27,6 +27,6 @@ S="${WORKDIR}/password-store-${PV}"
 src_install() {
 	newbin src/password-store.sh pass
 	doman man/pass.1
-	dodoc README
+	dodoc README COPYING INSTALL
 	newbashcomp bash-completion/pass-bash-completion.sh ${PN}
 }
