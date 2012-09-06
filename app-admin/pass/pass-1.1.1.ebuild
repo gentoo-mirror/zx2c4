@@ -4,15 +4,14 @@
 
 EAPI=4
 
-inherit bash-completion-r1 git-2
+inherit bash-completion-r1
 
 DESCRIPTION="Stores, retrieves, generates, and synchronizes passwords securely using gpg, pwgen, and git."
-HOMEPAGE="http://www.zx2c4.com"
-SRC_URI=""
-EGIT_REPO_URI="http://git.zx2c4.com/password-store"
+HOMEPAGE="http://zx2c4.com/projects/password-store/"
+SRC_URI="http://git.zx2c4.com/password-store/snapshot/password-store-${PV}.tar.xz"
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64"
 IUSE="X +git"
 
 RDEPEND="
@@ -22,6 +21,8 @@ RDEPEND="
 	git? ( dev-vcs/git )
 	X? ( x11-misc/xclip )
 "
+
+S="${WORKDIR}/password-store-${PV}"
 
 src_install() {
 	newbin src/password-store.sh pass
