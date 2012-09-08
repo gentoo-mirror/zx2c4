@@ -13,7 +13,7 @@ EGIT_REPO_URI="http://git.zx2c4.com/password-store"
 SLOT="0"
 LICENSE="GPL-2"
 KEYWORDS=""
-IUSE="X +git"
+IUSE="+git X zsh-completion"
 
 RDEPEND="
 	app-crypt/gnupg
@@ -21,6 +21,7 @@ RDEPEND="
 	app-text/tree
 	git? ( dev-vcs/git )
 	X? ( x11-misc/xclip )
+	zsh-completion? ( app-shells/zsh )
 "
 
 S="${WORKDIR}/password-store-${PV}"
@@ -29,5 +30,9 @@ src_install() {
 	newbin src/password-store.sh pass
 	doman man/pass.1
 	dodoc README COPYING INSTALL
-	newbashcomp bash-completion/pass-bash-completion.sh ${PN}
+	newbashcomp contrib/pass.bash-completion ${PN}
+	if use zsh-completion ; then
+		insinto /usr/share/zsh/site-functions
+		newins contrib/pass.zsh-completion _pass
+	fi
 }
