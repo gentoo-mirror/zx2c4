@@ -12,7 +12,7 @@ SRC_URI="http://git.zx2c4.com/password-store/snapshot/password-store-${PV}.tar.x
 SLOT="0"
 LICENSE="GPL-2"
 KEYWORDS="~x86 ~amd64"
-IUSE="+git X zsh-completion"
+IUSE="+git X zsh-completion fish-completion"
 
 RDEPEND="
 	app-crypt/gnupg
@@ -21,6 +21,7 @@ RDEPEND="
 	git? ( dev-vcs/git )
 	X? ( x11-misc/xclip )
 	zsh-completion? ( app-shells/zsh )
+	fish-completion? ( app-shells/fish )
 "
 
 S="${WORKDIR}/password-store-${PV}"
@@ -33,5 +34,9 @@ src_install() {
 	if use zsh-completion ; then
 		insinto /usr/share/zsh/site-functions
 		newins contrib/pass.zsh-completion _pass
+	fi
+	if use fish-completion ; then
+		insinto /usr/share/fish/completions
+		newins contrib/pass.fish-completion pass.fish
 	fi
 }
