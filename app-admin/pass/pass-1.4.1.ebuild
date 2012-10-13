@@ -29,7 +29,7 @@ S="${WORKDIR}/password-store-${PV}"
 src_install() {
 	newbin src/password-store.sh pass
 	doman man/pass.1
-	dodoc README COPYING INSTALL
+	dodoc README
 	newbashcomp contrib/pass.bash-completion ${PN}
 	if use zsh-completion ; then
 		insinto /usr/share/zsh/site-functions
