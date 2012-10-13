@@ -1,4 +1,4 @@
-# Copyright 2012 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -7,8 +7,7 @@ EAPI=4
 inherit bash-completion-r1 git-2
 
 DESCRIPTION="Stores, retrieves, generates, and synchronizes passwords securely using gpg, pwgen, and git."
-HOMEPAGE="http://www.zx2c4.com"
-SRC_URI=""
+HOMEPAGE="http://zx2c4.com/projects/password-store/"
 EGIT_REPO_URI="http://git.zx2c4.com/password-store"
 SLOT="0"
 LICENSE="GPL-2"
@@ -30,7 +29,7 @@ S="${WORKDIR}/password-store-${PV}"
 src_install() {
 	newbin src/password-store.sh pass
 	doman man/pass.1
-	dodoc README COPYING INSTALL
+	dodoc README
 	newbashcomp contrib/pass.bash-completion ${PN}
 	if use zsh-completion ; then
 		insinto /usr/share/zsh/site-functions
