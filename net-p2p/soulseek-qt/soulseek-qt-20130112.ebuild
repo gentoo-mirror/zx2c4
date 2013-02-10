@@ -23,10 +23,9 @@ RDEPEND="
 	"
 RESTRICT="mirror"
 S="${WORKDIR}"
+
 src_install() {
 	exeinto /usr/bin
-	if use amd64; then
-		BINARY_NAME="${BINARY_NAME}-64bit"
-	fi
-	newexe "$BINARY_NAME" soulseek-qt
+	use amd64 && BINARY_NAME="${BINARY_NAME}-64bit"
+	newexe "${BINARY_NAME}" "${PN}"
 }
