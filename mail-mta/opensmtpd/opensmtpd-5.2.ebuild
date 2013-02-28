@@ -21,6 +21,19 @@ DEPEND="dev-libs/openssl
 		sys-libs/db
 		dev-db/sqlite:3
 		dev-libs/libevent
+		!net-mail/mailwrapper
+		!mail-mta/courier
+		!mail-mta/esmtp
+		!mail-mta/exim
+		!mail-mta/mini-qmail
+		!mail-mta/msmtp[mta]
+		!mail-mta/nbsmtp
+		!mail-mta/netqmail
+		!mail-mta/nullmailer
+		!mail-mta/postfix
+		!mail-mta/qmail-ldap
+		!mail-mta/sendmail
+		!mail-mta/ssmtp[mta]
 "
 RDEPEND="${DEPEND}"
 
@@ -28,6 +41,7 @@ S=${WORKDIR}/${P}.xp1
 
 src_prepare() {
 	epatch "${FILESDIR}"/pam.patch
+	epatch "${FILESDIR}"/strict-alias.patch
 }
 
 src_configure() {
