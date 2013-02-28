@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-perl/Net-Server-Mail/Net-Server-Mail-0.180.0.ebuild,v 1.1 2012/05/14 17:24:30 tove Exp $
 
-EAPI=4
+EAPI=5
 
 MODULE_AUTHOR=RHANDOM
 MODULE_VERSION=${PV}

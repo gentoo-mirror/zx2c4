@@ -2,7 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=4
+EAPI=5
+
+inherit eutils
 
 DESCRIPTION="An SMTP proxy server for adding DKIM headers."
 HOMEPAGE="http://dkimproxy.sourceforge.net"
@@ -13,5 +15,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="dev-perl/Mail-DKIM dev-perl/Net-Server dev-perl/Error"
+DEPEND="dev-perl/Mail-DKIM
+		dev-perl/Net-Server
+		dev-perl/Error
+		dev-perl/MIME-tools"
 RDEPEND="${DEPEND}"
+
+src_install() {
+	default
+	newinitd "${FILESDIR}"/dkimproxy.in.initd dkimproxy.in
+	newinitd "${FILESDIR}"/dkimproxy.out.initd dkimproxy.out
+}
