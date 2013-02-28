@@ -10,7 +10,7 @@ DESCRIPTION="Lightweight but featured SMTP daemon from OpenBSD"
 HOMEPAGE="http://www.opensmtpd.org/"
 SRC_URI="http://www.opensmtpd.org/archives/opensmtpd-portable-latest.tar.gz"
 
-LICENSE="BSD-1"
+LICENSE="ISC BSD BSD-1 BSD-2 BSD-4"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="pam"
