@@ -4,11 +4,13 @@
 
 EAPI=5
 
-inherit multilib user flag-o-matic eutils pam
+inherit multilib user flag-o-matic eutils pam git-2
 
 DESCRIPTION="Lightweight but featured SMTP daemon from OpenBSD"
 HOMEPAGE="http://www.opensmtpd.org/"
-SRC_URI="http://www.opensmtpd.org/archives/opensmtpd-portable-latest.tar.gz"
+SRC_URI=""
+EGIT_BRANCH="portable"
+EGIT_REPO_URI="git://github.com/poolpOrg/OpenSMTPD.git"
 
 LICENSE="ISC BSD BSD-1 BSD-2 BSD-4 SSLeay"
 SLOT="0"
