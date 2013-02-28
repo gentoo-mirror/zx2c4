@@ -45,7 +45,7 @@ diff -ru opensmtpd-5.2.xp1/smtpd/smtpd.c opensmtpd-5.2.xp1-pam/smtpd/smtpd.c
 +	pam_handle_t *pamh = NULL;
 +	struct pam_conv conv = { pam_conv_password, password };
 +	
-+	if ((rc = pam_start("opensmtpd", username, &conv, &pamh)) != PAM_SUCCESS)
++	if ((rc = pam_start("smtpd", username, &conv, &pamh)) != PAM_SUCCESS)
 +		goto end;
 +	if ((rc = pam_authenticate(pamh, 0)) != PAM_SUCCESS)
 +		goto end;

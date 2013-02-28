@@ -10,7 +10,7 @@ DESCRIPTION="Lightweight but featured SMTP daemon from OpenBSD"
 HOMEPAGE="http://www.opensmtpd.org/"
 SRC_URI="http://www.opensmtpd.org/archives/opensmtpd-portable-latest.tar.gz"
 
-LICENSE="ISC BSD BSD-1 BSD-2 BSD-4"
+LICENSE="ISC BSD BSD-1 BSD-2 BSD-4 SSLeay"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="pam"
@@ -41,7 +41,7 @@ S=${WORKDIR}/${P}.xp1
 
 src_prepare() {
 	epatch "${FILESDIR}"/pam.patch
-	epatch "${FILESDIR}"/strict-alias.patch
+	epatch "${FILESDIR}"/build-warnings.patch
 }
 
 src_configure() {
@@ -56,8 +56,8 @@ src_configure() {
 
 src_install() {
 	default
-	newinitd "${FILESDIR}"/opensmtpd.initd opensmtpd
-	use pam && newpamd "${FILESDIR}"/opensmtpd.pam opensmtpd
+	newinitd "${FILESDIR}"/smtpd.initd smtpd
+	use pam && newpamd "${FILESDIR}"/smtpd.pam smtpd
 }
 
 pkg_preinst() {
