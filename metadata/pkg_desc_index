@@ -1,9 +1,9 @@
-dev-qt/qtdocumentation 5.4.1: Documentation for Qt5, for use with Qt Creator and other Qt documentation tools.
-media-gfx/brscan-skey 0.2.4.1: Brother scan key tool
-media-gfx/brscan4 0.4.1.6: Brother scanner driver for brscan4 models
-media-libs/mbelib 9999: P25 Phase 1 and ProVoice vocoder
-media-radio/dsd 9999: Digital Speech Decoder
+dev-qt/qtdocumentation 5.4.1: 
+media-gfx/brscan-skey 0.2.4.1: 
+media-gfx/brscan4 0.4.1.6: 
+media-libs/mbelib 9999: 
+media-radio/dsd 9999: 
 net-analyzer/medusa 2.0: Parallel Network Login Auditor
 net-misc/mulder-listen-daemon 9999: The truth is out there.
 net-misc/telnet-password-honeypot 9999: A password honeypot for telnet.
-net-wireless/gr-air-modes 9999: This module implements a complete Mode S and ADS-B receiver for Gnuradio
+net-wireless/gr-air-modes 9999: 
