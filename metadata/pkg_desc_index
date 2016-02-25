@@ -4,6 +4,7 @@ media-gfx/brscan4 0.4.1.6: Brother scanner driver for brscan4 models
 media-libs/mbelib 9999: P25 Phase 1 and ProVoice vocoder
 media-radio/dsd 9999: Digital Speech Decoder
 net-analyzer/medusa 2.0: Parallel Network Login Auditor
+net-misc/git-daemon-dummy 9999: A redirector for old git:// endpoints
 net-misc/mulder-listen-daemon 9999: The truth is out there.
 net-misc/telnet-password-honeypot 9999: A password honeypot for telnet.
 net-wireless/gr-air-modes 9999: This module implements a complete Mode S and ADS-B receiver for Gnuradio
