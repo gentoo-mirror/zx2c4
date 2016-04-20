@@ -8,3 +8,4 @@ net-misc/git-daemon-dummy 9999: A redirector for old git:// endpoints
 net-misc/mulder-listen-daemon 9999: The truth is out there.
 net-misc/telnet-password-honeypot 9999: A password honeypot for telnet.
 net-wireless/gr-air-modes 9999: This module implements a complete Mode S and ADS-B receiver for Gnuradio
+x11-themes/gnome-breeze 9999: Unofficial GTK 2/3 Breeze Theme
