@@ -21,7 +21,7 @@ src_install() {
 	for style in Breeze-dark-gtk Breeze-gtk; do
 		dodir ${THEMESDIR}/${style}
 		insinto ${THEMESDIR}/${style}
-		doins -r ${style}/gtk-{2.0,3.18} #3.20 is ongoing work
+		doins -r ${style}/gtk-{2.0,3.18,3.20}
 	done
 
 	dodoc README.md
