@@ -5,3 +5,4 @@ media-radio/dsd 9999: Digital Speech Decoder
 net-misc/git-daemon-dummy 9999: A redirector for old git:// endpoints
 net-misc/mulder-listen-daemon 9999: The truth is out there.
 net-misc/telnet-password-honeypot 9999: A password honeypot for telnet.
+net-wireless/unifi 5.0.7: Management Controller for UniFi APs
