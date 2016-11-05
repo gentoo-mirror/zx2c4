@@ -1,3 +1,4 @@
+app-text/ripgrep 0.2.6: ag/grep replacement
 dev-libs/libphutil 9999: A collection of PHP utility classes
 dev-util/arcanist 9999: Command line interface for Phabricator
 media-libs/mbelib 9999: P25 Phase 1 and ProVoice vocoder
