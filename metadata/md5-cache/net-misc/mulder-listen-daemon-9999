@@ -5,6 +5,5 @@ EAPI=0
 HOMEPAGE=https://git.zx2c4.com/mulder-listen-daemon
 KEYWORDS=~amd64 ~x86
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-2 src_install:-
 _eclasses_=git-2	195a672bfaf52d868442171c9469bbb6
 _md5_=8cd7efffd39e98194e3786a68cce49ad
