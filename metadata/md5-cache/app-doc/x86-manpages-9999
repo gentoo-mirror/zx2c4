@@ -1,0 +1,10 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Man pages for x86 instructions
+EAPI=7
+HOMEPAGE=https://github.com/ttmo-O/x86-manpages
+KEYWORDS=~amd64
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	809e27702c573cbba31c08ed00bbad33
+_md5_=ee01b4c2504cf96a81f3299c26074748
