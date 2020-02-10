@@ -3,7 +3,4 @@ dev-libs/libphutil 9999: A collection of PHP utility classes
 dev-util/arcanist 9999: Command line interface for Phabricator
 media-libs/mbelib 9999: P25 Phase 1 and ProVoice vocoder
 media-radio/dsd 9999: Digital Speech Decoder
-net-misc/git-daemon-dummy 9999: A redirector for old git:// endpoints
-net-misc/mulder-listen-daemon 9999: The truth is out there.
-net-misc/telnet-password-honeypot 9999: A password honeypot for telnet.
 net-wireless/unifi 5.0.7: Management Controller for UniFi APs
