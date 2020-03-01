@@ -1,5 +1,7 @@
 # Copyright 2012 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
 
+EAPI=7
+
 inherit git-r3
 
 DESCRIPTION="The truth is out there."
