@@ -1,6 +1,6 @@
 # Copyright 2012 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
 
-inherit git-2
+inherit git-r3
 
 DESCRIPTION="A password honeypot for telnet."
 HOMEPAGE="https://git.zx2c4.com/telnet-password-honeypot"

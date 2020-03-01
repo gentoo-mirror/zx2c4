@@ -1,6 +1,6 @@
 # Copyright 2016 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
 
-inherit git-2
+inherit git-r3
 
 DESCRIPTION="A redirector for old git:// endpoints"
 HOMEPAGE="https://git.zx2c4.com/git-daemon-dummy"
